@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    min-height: 100vh;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-image: url("../assets/stones-1994691_1920.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+body > .dark-layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.alert-logged-out{
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -200px;
+    background-color: #1e7e34;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.alert-logged-out > h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.alert-undefined{
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -200px;
+    background-color: #ffc107;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.alert-undefined > h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.log{
+    width: 400px;
+    height: 400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.log > header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.log > header > h1{
+    font-size: 4rem;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+}
+
+.log > form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.log > form >  input{
+    margin-bottom: 20px;
+}
+
+.log > form > button{
+    width: 100%;
+}
